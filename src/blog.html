@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prerak/shop</title>
+    <link href="output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="prerak.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body class="m-0 p-0 box-border">
+    <!-- navbar -->
+    <div
+      class="navbar flex justify-between items-center py-5 px-6 md:py-8 md:px-10 bg-[#E3E6F3] shadow-[0_4px_10px_0_rgba(0,0,0,0.2)] transition-all ease-in z-10 sticky top-0 w-full"
+    >
+      <a href="index.html"
+      ><img src="logos/PRERAK-LOGO.png" alt="" class="w-30 md:w-40 md:ml-7"
+      /></a>
+      <div
+      id="navbar"
+      class="active flex flex-col justify-start items-start fixed top-0 right-[-300px] h-[100vh] w-[225px] bg-[#e3e6f3] shadow-[0_40px_60px_0_rgba(0,0,0,0.1)] pt-20 pl-10 md:static md:flex-row md:justify-center md:items-center md:h-auto md:w-auto md:bg-transparent md:shadow-none md:pt-0 md:pl-0 md:gap-8 transition-all duration-300 ease-in-out"
+      >
+      <ul class="gap-8 text-lg font-[500] md:flex">
+        <li class="md:block absolute top-7.5 left-7.5">
+        <a href="#" id="close" class="block md:hidden px-3 text-2xl bar">
+          <i class="fa-solid fa-xmark"></i>
+        </a>
+        </li>
+        <li class="mb-[25px] md:mb-0">
+        <a
+          href="index.html"
+          class="relative hover:text-[#088178] after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 hover:after:w-[40%] after:h-[2px] after:bg-[#088178] after:transition-all after:duration-300"
+          >Home</a
+        >
+        </li>
+        <li class="mb-[25px] md:mb-0">
+        <a
+          href="shop.html"
+          class="relative hover:text-[#088178] after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 hover:after:w-[40%] after:h-[2px] after:bg-[#088178] after:transition-all after:duration-300"
+          >Shop</a
+        >
+        </li>
+        <li class="mb-[25px] md:mb-0">
+        <a
+          href="blog.html"
+          class="text-[#088178] relative after:content-[''] after:absolute after:bottom-[-4px] after:left-[0px] after:w-[40%] after:h-[2px] after:bg-[#088178]"
+          >Blog</a
+        >
+        </li>
+        <li class="mb-[25px] md:mb-0">
+        <a
+          href="About.html"
+          class="relative hover:text-[#088178] after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 hover:after:w-[40%] after:h-[2px] after:bg-[#088178] after:transition-all after:duration-300"
+          >About</a
+        >
+        </li>
+        <li class="mb-[25px] md:mb-0">
+        <a
+          href="contact.html"
+          class="relative hover:text-[#088178] after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 hover:after:w-[40%] after:h-[2px] after:bg-[#088178] after:transition-all after:duration-300"
+          >Contact</a
+        >
+        </li>
+      </ul>
+      <div class="items-center md:flex text-2xl hidden">
+        <a href="#" class="block px-3 sm:p-0 md:text-2xl sm:text-2xl">
+        <i class="fa-solid fa-bag-shopping md:mr-10"></i>
+        </a>
+      </div>
+      </div>
+      <div class="items-center flex text-2xl md:hidden">
+      <a href="#" class="block px-3 sm:p-3 md:hidden sm:text-2xl">
+        <i class="fa-solid fa-bag-shopping md:mr-10"></i>
+      </a>
+      <a href="#" id="bar" class="block md:hidden px-3 text-2xl bar">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+      </div>
+    </div>
+    <!-- hero -->
+    <main
+      class="page-header bg-[url('image/banner/b19.jpg')] h-[60vh] sm:h-[80vh] md:h-[40vh] bg-top bg-cover px-4 flex flex-col justify-center items-center md:px-[80px] sm:px-[40px] md:w-[100%] text-white"
+    >
+      <h1 class="text-3xl md:text-6xl sm:text-4xl">#Readmore</h1>
+      <p class="mt-3 text-[12px] md:text-2xl sm:text-[19px]">
+        Read all case studies, articles, and news about our products
+      </p>
+    </main>
+    <!-- blog -->
+    <div id="blog" class="pt-[150px] md:px-[150px] px-2">
+      <div
+        class="blog-box md:flex md:items-center md:flex-row flex flex-col items-start w-full relative pb-[90px]"
+      >
+        <div class="blog-image md:w-[50%] w-full mr-[40px]">
+          <img
+            src="image/blog/b1.jpg"
+            alt=""
+            class="w-full h-[300px] object-cover"
+          />
+        </div>
+        <div class="blog-details md:w-[50%] w-full">
+          <h4 class="font-bold mt-3 md:mt-0">
+            The Cotton-Jersey Zip-Up Hoodie
+          </h4>
+          <p>
+            Kickstarter man braid godord coloring book. Raclette waistcoat
+            selfies yr wolf chartreuse hexagon irony. godard...
+          </p>
+          <a
+            href="#"
+            class="text-[11px] text-[#000] font-bold hover:text-[#088178] transition duration-300"
+            >COUNTINUE READING ───────────</a
+          >
+        </div>
+        <h1
+          class="absolute md:top-[-60px] top-[-30px] left-0 md:text-[70px] text-[40px] font-bold text-[#c9cbce] z-[-9]"
+        >
+          13/01
+        </h1>
+      </div>
+      <div
+        class="blog-box md:flex md:items-center md:flex-row flex flex-col items-start w-full relative pb-[90px]"
+      >
+        <div class="blog-image md:w-[50%] w-full mr-[40px]">
+          <img
+            src="image/blog/b2.jpg"
+            alt=""
+            class="w-full h-[300px] object-cover"
+          />
+        </div>
+        <div class="blog-details md:w-[50%] w-full">
+          <h4 class="font-bold mt-3 md:mt-0">
+            The Cotton-Jersey Zip-Up Hoodie
+          </h4>
+          <p>
+            Kickstarter man braid godord coloring book. Raclette waistcoat
+            selfies yr wolf chartreuse hexagon irony. godard...
+          </p>
+          <a
+            href="#"
+            class="text-[11px] text-[#000] font-bold hover:text-[#088178] transition duration-300"
+            >COUNTINUE READING ───────────</a
+          >
+        </div>
+        <h1
+          class="absolute md:top-[-60px] top-[-30px] left-0 md:text-[70px] text-[40px] font-bold text-[#c9cbce] z-[-9]"
+        >
+          13/01
+        </h1>
+      </div>
+      <div
+        class="blog-box md:flex md:items-center md:flex-row flex flex-col items-start w-full relative pb-[90px]"
+      >
+        <div class="blog-image md:w-[50%] w-full mr-[40px]">
+          <img
+            src="image/blog/b3.jpg"
+            alt=""
+            class="w-full h-[300px] object-cover"
+          />
+        </div>
+        <div class="blog-details md:w-[50%] w-full">
+          <h4 class="font-bold mt-3 md:mt-0">
+            The Cotton-Jersey Zip-Up Hoodie
+          </h4>
+          <p>
+            Kickstarter man braid godord coloring book. Raclette waistcoat
+            selfies yr wolf chartreuse hexagon irony. godard...
+          </p>
+          <a
+            href="#"
+            class="text-[11px] text-[#000] font-bold hover:text-[#088178] transition duration-300"
+            >COUNTINUE READING ───────────</a
+          >
+        </div>
+        <h1
+          class="absolute md:top-[-60px] top-[-30px] left-0 md:text-[70px] text-[40px] font-bold text-[#c9cbce] z-[-9]"
+        >
+          13/01
+        </h1>
+      </div>
+      <div
+        class="blog-box md:flex md:items-center md:flex-row flex flex-col items-start w-full relative pb-[90px]"
+      >
+        <div class="blog-image md:w-[50%] w-full mr-[40px]">
+          <img
+            src="image/blog/b4.jpg"
+            alt=""
+            class="w-full h-[300px] object-cover"
+          />
+        </div>
+        <div class="blog-details md:w-[50%] w-full">
+          <h4 class="font-bold mt-3 md:mt-0">
+            The Cotton-Jersey Zip-Up Hoodie
+          </h4>
+          <p>
+            Kickstarter man braid godord coloring book. Raclette waistcoat
+            selfies yr wolf chartreuse hexagon irony. godard...
+          </p>
+          <a
+            href="#"
+            class="text-[11px] text-[#000] font-bold hover:text-[#088178] transition duration-300"
+            >COUNTINUE READING ───────────</a
+          >
+        </div>
+        <h1
+          class="absolute md:top-[-60px] top-[-30px] left-0 md:text-[70px] text-[40px] font-bold text-[#c9cbce] z-[-9]"
+        >
+          13/01
+        </h1>
+      </div>
+    </div>
+    <!-- pagination -->
+    <div class="pagination text-center md:mt-20 md:mb-20">
+      <a href="#" class="bg-[#088178] py-[15px] px-[20px] rounded text-white"
+        >1</a
+      >
+      <a href="#" class="bg-[#088178] py-[15px] px-[20px] rounded text-white"
+        >2</a
+      >
+      <a
+        href="#"
+        class="bg-[#088178] py-[15px] px-[20px] rounded text-white md:text-[16px] font-semibold"
+        ><i class="fa-solid fa-arrow-right"></i
+      ></a>
+    </div>
+    <!-- newsletter -->
+    <div
+      class="newsletter flex justify-between items-center flex-wrap bg-[url('./image/banner/b14.png')] bg-cover bg-[20%_30%] bg-[#041e42] h-[30vh] text-white p-5 mb-5"
+    >
+      <div class="newstext">
+        <h4 class="md:text-3xl text-lg ml-7 text-center md:text-left">
+          Sign Up For Newsletters
+        </h4>
+        <p class="text-white mt-3 ml-7">
+          Get E-mail updates about our latest shop and
+          <span class="text-yellow-500">special offers.</span>
+        </p>
+      </div>
+      <div class="form flex items-center justify-center">
+        <input
+          type="text"
+          placeholder="Your email address"
+          class="border-2 p-2 rounded"
+        />
+        <button
+          class="normal text-[12px] bg-white normal text-black hover:bg-[#088178] hover:text-white text-sm font-semibold px-6 py-3 rounded cursor-pointer border-none outline-none transition duration-200 ml-7"
+        >
+          Subscribe
+        </button>
+      </div>
+    </div>
+    <!-- footer -->
+    <!-- Desktop View -->
+    <div
+      class="section-p1 hidden md:flex flex-wrap justify-between md:px-[80px]"
+    >
+      <!-- Column 1 -->
+      <div class="col w-[25%] flex justify-between flex-col items-start gap-3">
+        <img src="./logos/PRERAK-LOGO.png" alt="" class="w-[50%] mb-6" />
+        <h4>Contact</h4>
+        <p>
+          <strong>Address:</strong> 562 Wellington Road, Street 32, San
+          Francisco
+        </p>
+        <p><strong>Phone:</strong> 9971xxxx / 8851xxxx</p>
+        <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+        <div class="follow">
+          <h4 class="mb-2">Follow Us</h4>
+          <div class="icon">
+            <a href="https://facebook.com" target="_blank"
+              ><i class="fab fa-facebook-f mx-1"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="fab fa-twitter mx-1"></i
+            ></a>
+            <a href="https://pinterest.com" target="_blank"
+              ><i class="fab fa-pinterest-p mx-1"></i
+            ></a>
+            <a href="https://youtube.com" target="_blank"
+              ><i class="fab fa-youtube mx-1"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other Columns as before -->
+      <div class="col flex flex-col items-start gap-3">
+        <h4>About</h4>
+        <a href="#">About Us </a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms And Condition</a>
+        <a href="#">Contact Us</a>
+      </div>
+
+      <div class="col flex flex-col items-start gap-3">
+        <h4>My Account</h4>
+        <a href="#">Sign In </a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+
+      <div class="col install flex flex-col items-start gap-3">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row flex justify-between">
+          <img
+            src="image/pay/app.jpg"
+            alt=""
+            class="border-2-black border-2 rounded-2xl mx-2.5"
+          />
+          <img
+            src="image/pay/play.jpg"
+            alt=""
+            class="border-2-black border-2 rounded-2xl mx-2.5"
+          />
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="image/pay/pay.png" alt="" />
+      </div>
+    </div>
+    <!-- Mobile View (Collapsible using <details>) -->
+    <div class="md:hidden px-4">
+      <details class="mb-4">
+        <summary class="font-semibold text-lg cursor-pointer">Contact</summary>
+        <div class="mt-2 space-y-1 text-sm">
+          <p>
+            <strong>Address:</strong> 562 Wellington Road, Street 32, San
+            Francisco
+          </p>
+          <p><strong>Phone:</strong> 9971xxxx / 8851xxxx</p>
+          <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+          <div>
+            <h4 class="mb-1">Follow Us</h4>
+            <div class="flex space-x-2">
+              <a href="https://facebook.com"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+              <a href="https://pinterest.com"
+                ><i class="fab fa-pinterest-p"></i
+              ></a>
+              <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <details class="mb-4">
+        <summary class="font-semibold text-lg cursor-pointer">About</summary>
+        <div class="mt-2 flex flex-col space-y-1 text-sm">
+          <a href="#">About Us</a>
+          <a href="#">Delivery Information</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms And Condition</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </details>
+
+      <details class="mb-4">
+        <summary class="font-semibold text-lg cursor-pointer">
+          My Account
+        </summary>
+        <div class="mt-2 flex flex-col space-y-1 text-sm">
+          <a href="#">Sign In</a>
+          <a href="#">View Cart</a>
+          <a href="#">My Wishlist</a>
+          <a href="#">Track My Order</a>
+          <a href="#">Help</a>
+        </div>
+      </details>
+
+      <details class="mb-4">
+        <summary class="font-semibold text-lg cursor-pointer">
+          Install App
+        </summary>
+        <div class="mt-2 text-sm space-y-2">
+          <p>From App Store or Google Play</p>
+          <div class="flex">
+            <img
+              src="image/pay/app.jpg"
+              alt=""
+              class="w-24 border-2 rounded-xl mr-2"
+            />
+            <img
+              src="image/pay/play.jpg"
+              alt=""
+              class="w-24 border-2 rounded-xl"
+            />
+          </div>
+          <p>Secured Payment Gateways</p>
+          <img src="image/pay/pay.png" alt="" class="w-full" />
+        </div>
+      </details>
+    </div>
+    <!-- Bottom Note -->
+    <div>
+      <p class="text-center text-lg mt-4">Prerak.com</p>
+    </div>
+    <script src="prerak.js"></script>
+  </body>
+</html>

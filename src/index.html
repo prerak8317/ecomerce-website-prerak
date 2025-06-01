@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prerak.com</title>
+    <link href="output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="prerak.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body class="m-0 p-0 box-border">
+    <!-- navbar -->
+    <div
+      class="navbar flex justify-between items-center py-5 px-6 md:py-8 md:px-10 bg-[#E3E6F3] shadow-[0_4px_10px_0_rgba(0,0,0,0.2)] transition-all ease-in z-10 sticky top-0 w-full"
+    >
+      <a href="#"
+        ><img src="logos/PRERAK-LOGO.png" alt="" class="w-30 md:w-40 md:ml-7"
+      /></a>
+      <div
+        id="navbar"
+        class="active flex flex-col justify-start items-start fixed top-0 right-[-300px] h-[100vh] w-[225px] bg-[#e3e6f3] shadow-[0_40px_60px_0_rgba(0,0,0,0.1)] pt-20 pl-10 md:static md:flex-row md:justify-center md:items-center md:h-auto md:w-auto md:bg-transparent md:shadow-none md:pt-0 md:pl-0 md:gap-8 transition-all duration-300 ease-in-out"
+      >
+        <ul class="gap-8 text-lg font-[500] md:flex">
+          <li class="md:block absolute top-7.5 left-7.5">
+            <a href="#" id="close" class="block md:hidden px-3 text-2xl bar">
+              <i class="fa-solid fa-xmark"></i>
+            </a>
+          </li>
+          <li class="mb-[25px] md:mb-0">
+            <a
+              href="index.html"
+              class="text-[#088178] relative after:content-[''] after:absolute after:bottom-[-4px] after:left-[0px] after:w-[40%] after:h-[2px] after:bg-[#088178]"
+              >Home</a
+            >
+          </li>
+          <li class="mb-[25px] md:mb-0">
+            <a
+              href="shop.html"
+              class="relative hover:text-[#088178] after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 hover:after:w-[40%] after:h-[2px] after:bg-[#088178] after:transition-all after:duration-300"
+              >Shop</a
+            >
+          </li>
+          <li class="mb-[25px] md:mb-0">
+            <a
+              href="blog.html"
+              class="relative hover:text-[#088178] after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 hover:after:w-[40%] after:h-[2px] after:bg-[#088178] after:transition-all after:duration-300"
+              >Blog</a
+            >
+          </li>
+          <li class="mb-[25px] md:mb-0">
+            <a
+              href="About.html"
+              class="relative hover:text-[#088178] after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 hover:after:w-[40%] after:h-[2px] after:bg-[#088178] after:transition-all after:duration-300"
+              >About</a
+            >
+          </li>
+          <li class="mb-[25px] md:mb-0">
+            <a
+              href="contact.html"
+              class="relative hover:text-[#088178] after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 hover:after:w-[40%] after:h-[2px] after:bg-[#088178] after:transition-all after:duration-300"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="items-center md:flex text-2xl hidden">
+          <a href="#" class="block px-3 sm:p-0 md:text-2xl sm:text-2xl">
+            <i class="fa-solid fa-bag-shopping md:mr-10"></i>
+          </a>
+        </div>
+      </div>
+      <div class="items-center flex text-2xl md:hidden">
+        <a href="#" class="block px-3 sm:p-3 md:hidden sm:text-2xl">
+          <i class="fa-solid fa-bag-shopping md:mr-10"></i>
+        </a>
+        <a href="#" id="bar" class="block md:hidden px-3 text-2xl bar">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </div>
+    </div>
+    <!-- hero -->
+    <main
+      class="hero bg-[url('image/hero4.png')] h-[60vh] sm:h-[80vh] md:h-[90vh] bg-top bg-cover px-4 flex flex-col justify-center items-start md:px-[80px] sm:px-[40px]"
+    >
+      <h4 class="text-lg md:text-4xl sm:text-2xl">Trade-In-Offer</h4>
+      <h1 class="text-3xl md:text-6xl sm:text-4xl">Super value deals</h1>
+      <h1 class="text-[#088178] text-3xl md:text-6xl sm:text-4xl">
+        On all products
+      </h1>
+      <p class="mt-3 text-sm md:text-2xl sm:text-lg">
+        Save more with coupons & up to 70% off !
+      </p>
+      <button
+        class="mt-4 bg-[url('logos/button.png')] bg-cover px-[60px] py-[10px] bg-no-repeat text-[#088178] cursor-pointer"
+      >
+        Shop Now
+      </button>
+    </main>
+    <!-- feature section  -->
+    <div
+      class="feature py-10 px-20 sm:py-5 sm:px-10 h-[100%] sm:[70vh] md:h-[50vh] flex md:justify-between justify-center items-center flex-wrap sm:justify-between"
+    >
+      <div
+        class="feature-1 text-center w-45 border-1 py-3 hover:shadow-[20px_20px_34px_rgba(0,0,0,0.03)] border-[#cce7de] rounded my-[15px] shadow-[10px_10px_54px_rgba(70,62,221,0.03)]"
+      >
+        <center>
+          <img src="./image/feature/f1.png" alt="" class="w-full mb-2.5" />
+        </center>
+        <h5
+          class="leading-1 h-6 pt-2 pr-2 pb-1.5 pl-2 mt-2.5 border rounded text-[#088178] bg-[#fddde4] inline-block"
+        >
+          Free Shiping
+        </h5>
+      </div>
+      <div
+        class="feature-1 text-center w-45 border-1 py-3 hover:shadow-[20px_20px_34px_rgba(0,0,0,0.03)] border-[#cce7de] rounded my-[15px] shadow-[10px_10px_54px_rgba(70,62,221,0.03)]"
+      >
+        <center>
+          <img src="./image/feature/f2.png" alt="" class="w-full mb-2.5" />
+        </center>
+        <h5
+          class="leading-1 h-6 pt-2 pr-2 pb-1.5 pl-2 mt-2.5 border rounded text-[#088178] bg-[#d1e8f2] inline-block"
+        >
+          Online Order
+        </h5>
+      </div>
+      <div
+        class="feature-1 text-center w-45 border-1 py-3 hover:shadow-[20px_20px_34px_rgba(0,0,0,0.03)] border-[#cce7de] rounded my-[15px] shadow-[10px_10px_54px_rgba(70,62,221,0.03)]"
+      >
+        <center>
+          <img src="./image/feature/f3.png" alt="" class="w-full mb-2.5" />
+        </center>
+        <h5
+          class="leading-1 h-6 pt-2 pr-2 pb-1.5 pl-2 mt-2.5 border rounded text-[#088178] bg-[#cdd4f8] inline-block"
+        >
+          Save Money
+        </h5>
+      </div>
+      <div
+        class="feature-1 text-center w-45 border-1 py-3 hover:shadow-[20px_20px_34px_rgba(0,0,0,0.03)] border-[#cce7de] rounded my-[15px] shadow-[10px_10px_54px_rgba(70,62,221,0.03)]"
+      >
+        <center>
+          <img src="./image/feature/f4.png" alt="" class="w-full mb-2.5" />
+        </center>
+        <h5
+          class="leading-1 h-6 pt-2 pr-2 pb-1.5 pl-2 mt-2.5 border rounded text-[#088178] bg-[#f6dbf6] inline-block"
+        >
+          Promotions
+        </h5>
+      </div>
+      <div
+        class="feature-1 text-center w-45 border-1 py-3 hover:shadow-[20px_20px_34px_rgba(0,0,0,0.03)] border-[#cce7de] rounded my-[15px] shadow-[10px_10px_54px_rgba(70,62,221,0.03)]"
+      >
+        <center>
+          <img src="./image/feature/f5.png" alt="" class="w-full mb-2.5" />
+        </center>
+        <h5
+          class="leading-1 h-6 pt-2 pr-2 pb-1.5 pl-2 mt-2.5 border rounded text-[#088178] bg-[#fff2e5] inline-block"
+        >
+          Happy Sell
+        </h5>
+      </div>
+      <div
+        class="feature-1 text-center w-45 border-1 py-3 hover:shadow-[20px_20px_34px_rgba(0,0,0,0.03)] border-[#cce7de] rounded my-[15px] shadow-[10px_10px_54px_rgba(70,62,221,0.03)]"
+      >
+        <center>
+          <img src="./image/feature/f6.png" alt="" class="w-full mb-2.5" />
+        </center>
+        <h5
+          class="leading-1 h-6 pt-2 pr-2 pb-1.5 pl-2 mt-2.5 border rounded text-[#088178] bg-[#fddde4] inline-block"
+        >
+          24/7 Support
+        </h5>
+      </div>
+    </div>
+    <!-- products -->
+    <div class="feature-text">
+      <h2 class="text-center md:text-5xl text-4xl">Featured Products</h2>
+      <p class="text-center md:mt-4 md:mb-5">
+        Sumer Collection New Morden Design
+      </p>
+    </div>
+    <div class="product section-p1">
+      <div
+        class="pro-container flex justify-center md:justify-between items-center flex-wrap md:px-20 sm:justify-evenly"
+      >
+        <div
+          class="pro w-[23%] min-w-[250px] py-2.5 px-3 border-1-[#cce7de] border-1 rounded-3xl shadow-[20px_20px_30px_0_rgba(0,0,0,0.2)] hover:shadow-[20px_20px_30px_0_rgba(0,0,0,0.3)] my-4 transition ease-in"
+          onclick="window.location.href='shop-product.html'"
+        >
+          <img
+            src="./image/products/f1.jpg"
+            alt=""
+            class="rounded-2xl w-full"
+          />
+          <div class="des py-2.5">
+            <span class="text-[#606063] md:text-lg">adidas</span>
+            <h5 class="pt-2 text-[#1a1a1a] md:text-[20px]">
+              Cartoon Astronaut T-Shirts
+            </h5>
+            <div class="star text-[#f3b519] text-[16px]">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="pt-2 text-[25px] font-bold text-[#088178]">$78</h4>
+          </div>
+          <div class="flex justify-center items-center">
+            <a href="#" class="flex justify-center items-center">
+              <i
+                class="fa-solid fa-shopping-cart w-10 h-10 rounded-full bg-[#e8f6ea] font-medium text-[#088178] border border-[#cce7de]"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="pro w-[23%] min-w-[250px] py-2.5 px-3 border-1-[#cce7de] border-1 rounded-3xl shadow-[20px_20px_30px_0_rgba(0,0,0,0.2)] hover:shadow-[20px_20px_30px_0_rgba(0,0,0,0.3)] my-4 transition ease-in"
+          onclick="window.location.href='shop-product.html'"
+        >
+          <img
+            src="./image/products/f2.jpg"
+            alt=""
+            class="rounded-2xl w-full"
+          />
+          <div class="des py-2.5">
+            <span class="text-[#606063] md:text-lg">adidas</span>
+            <h5 class="pt-2 text-[#1a1a1a] md:text-[20px]">
+              Cartoon Astronaut T-Shirts
+            </h5>
+            <div class="star text-[#f3b519] text-[16px]">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="pt-2 text-[25px] font-bold text-[#088178]">$78</h4>
+          </div>
+          <div class="flex justify-center">
+            <a href="#">
+              <i
+                class="fa-solid fa-shopping-cart w-10 h-10 rounded-full bg-[#e8f6ea] font-medium text-[#088178] border border-[#cce7de]"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="pro w-[23%] min-w-[250px] py-2.5 px-3 border-1-[#cce7de] border-1 rounded-3xl shadow-[20px_20px_30px_0_rgba(0,0,0,0.2)] hover:shadow-[20px_20px_30px_0_rgba(0,0,0,0.3)] my-4 transition ease-in"
+          onclick="window.location.href='shop-product.html'"
+        >
+          <img
+            src="./image/products/f3.jpg"
+            alt=""
+            class="rounded-2xl w-full"
+          />
+          <div class="des py-2.5">
+            <span class="text-[#606063] md:text-lg">adidas</span>
+            <h5 class="pt-2 text-[#1a1a1a] md:text-[20px]">
+              Cartoon Astronaut T-Shirts
+            </h5>
+            <div class="star text-[#f3b519] text-[16px]">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="pt-2 text-[25px] font-bold text-[#088178]">$78</h4>
+          </div>
+          <div class="flex justify-center">
+            <a href="#">
+              <i
+                class="fa-solid fa-shopping-cart w-10 h-10 rounded-full bg-[#e8f6ea] font-medium text-[#088178] border border-[#cce7de]"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="pro w-[23%] min-w-[250px] py-2.5 px-3 border-1-[#cce7de] border-1 rounded-3xl shadow-[20px_20px_30px_0_rgba(0,0,0,0.2)] hover:shadow-[20px_20px_30px_0_rgba(0,0,0,0.3)] my-4 transition ease-in"
+          onclick="window.location.href='shop-product.html'"
+        >
+          <img
+            src="./image/products/f4.jpg"
+            alt=""
+            class="rounded-2xl w-full"
+          />
+          <div class="des py-2.5">
+            <span class="text-[#606063] md:text-lg">adidas</span>
+            <h5 class="pt-2 text-[#1a1a1a] md:text-[20px]">
+              Cartoon Astronaut T-Shirts
+            </h5>
+            <div class="star text-[#f3b519] text-[16px]">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="pt-2 text-[25px] font-bold text-[#088178]">$78</h4>
+          </div>
+          <div class="flex justify-center">
+            <a href="#">
+              <i
+                class="fa-solid fa-shopping-cart w-10 h-10 rounded-full bg-[#e8f6ea] font-medium text-[#088178] border border-[#cce7de]"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="pro w-[23%] min-w-[250px] py-2.5 px-3 border-1-[#cce7de] border-1 rounded-3xl shadow-[20px_20px_30px_0_rgba(0,0,0,0.2)] hover:shadow-[20px_20px_30px_0_rgba(0,0,0,0.3)] my-4 transition ease-in"
+          onclick="window.location.href='shop-product.html'"
+        >
+          <img
+            src="./image/products/f5.jpg"
+            alt=""
+            class="rounded-2xl w-full"
+          />
+          <div class="des py-2.5">
+            <span class="text-[#606063] md:text-lg">adidas</span>
+            <h5 class="pt-2 text-[#1a1a1a] md:text-[20px]">
+              Cartoon Astronaut T-Shirts
+            </h5>
+            <div class="star text-[#f3b519] text-[16px]">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="pt-2 text-[25px] font-bold text-[#088178]">$78</h4>
+          </div>
+          <div class="flex justify-center">
+            <a href="#">
+              <i
+                class="fa-solid fa-shopping-cart w-10 h-10 rounded-full bg-[#e8f6ea] font-medium text-[#088178] border border-[#cce7de]"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="pro w-[23%] min-w-[250px] py-2.5 px-3 border-1-[#cce7de] border-1 rounded-3xl shadow-[20px_20px_30px_0_rgba(0,0,0,0.2)] hover:shadow-[20px_20px_30px_0_rgba(0,0,0,0.3)] my-4 transition ease-in"
+          onclick="window.location.href='shop-product.html'"
+        >
+          <img
+            src="./image/products/f6.jpg"
+            alt=""
+            class="rounded-2xl w-full"
+          />
+          <div class="des py-2.5">
+            <span class="text-[#606063] md:text-lg">adidas</span>
+            <h5 class="pt-2 text-[#1a1a1a] md:text-[20px]">
+              Cartoon Astronaut T-Shirts
+            </h5>
+            <div class="star text-[#f3b519] text-[16px]">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="pt-2 text-[25px] font-bold text-[#088178]">$78</h4>
+          </div>
+          <div class="flex justify-center">
+            <a href="#">
+              <i
+                class="fa-solid fa-shopping-cart w-10 h-10 rounded-full bg-[#e8f6ea] font-medium text-[#088178] border border-[#cce7de]"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="pro w-[23%] min-w-[250px] py-2.5 px-3 border-1-[#cce7de] border-1 rounded-3xl shadow-[20px_20px_30px_0_rgba(0,0,0,0.2)] hover:shadow-[20px_20px_30px_0_rgba(0,0,0,0.3)] my-4 transition ease-in"
+          onclick="window.location.href='shop-product.html'"
+        >
+          <img
+            src="./image/products/f7.jpg"
+            alt=""
+            class="rounded-2xl w-full"
+          />
+          <div class="des py-2.5">
+            <span class="text-[#606063] md:text-lg">adidas</span>
+            <h5 class="pt-2 text-[#1a1a1a] md:text-[20px]">
+              Cartoon Astronaut T-Shirts
+            </h5>
+            <div class="star text-[#f3b519] text-[16px]">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="pt-2 text-[25px] font-bold text-[#088178]">$78</h4>
+          </div>
+          <div class="flex justify-center">
+            <a href="#">
+              <i
+                class="fa-solid fa-shopping-cart w-10 h-10 rounded-full bg-[#e8f6ea] font-medium text-[#088178] border border-[#cce7de]"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="pro w-[23%] min-w-[250px] py-2.5 px-3 border-1-[#cce7de] border-1 rounded-3xl shadow-[20px_20px_30px_0_rgba(0,0,0,0.2)] hover:shadow-[20px_20px_30px_0_rgba(0,0,0,0.3)] my-4 transition ease-in"
+          onclick="window.location.href='shop-product.html'"
+        >
+          <img
+            src="./image/products/f8.jpg"
+            alt=""
+            class="rounded-2xl w-full"
+          />
+          <div class="des py-2.5">
+            <span class="text-[#606063] md:text-lg">adidas</span>
+            <h5 class="pt-2 text-[#1a1a1a] md:text-[20px]">
+              Cartoon Astronaut T-Shirts
+            </h5>
+            <div class="star text-[#f3b519] text-[16px]">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="pt-2 text-[25px] font-bold text-[#088178]">$78</h4>
+          </div>
+          <div class="flex justify-center">
+            <a href="#">
+              <i
+                class="fa-solid fa-shopping-cart w-10 h-10 rounded-full bg-[#e8f6ea] font-medium text-[#088178] border border-[#cce7de]"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- banner  -->
+    <div
+      class="banner flex flex-col justify-center items-center bg-[url('image/banner/b2.jpg')] bg-cover bg-center py-12 w-full h-[40vh] text-white mt-15"
+    >
+      <h4 class="font-bold mb-5 md:text-[30px] text-[20px]">Repair Services</h4>
+      <h2 class="text-white md:text-5xl text-lg">
+        Up to <span class="text-white">70% Off</span> - All t-Shirts &
+        Accessories
+      </h2>
+      <button
+        class="mt-6 normal text-black hover:bg-[#088178] hover:text-white bg-white text-sm font-semibold md:px-6 md:py-3 py-1.5 px-3 rounded cursor-pointer border-none outline-none transition duration-200"
+      >
+        Explore More
+      </button>
+    </div>
+    <!-- product section new arrival -->
+    <div class="product section-p1 mt-7">
+      <div class="feature-text">
+        <h2 class="text-center md:text-5xl text-4xl">New Arrivals</h2>
+        <p class="text-center md:mt-4 md:mb-5 mt-2">
+          Sumer Collection New Morden Design
+        </p>
+      </div>
+      <div
+        class="pro-container flex justify-center md:justify-between items-center flex-wrap md:px-20 sm:justify-evenly"
+      >
+        <div
+          class="pro w-[23%] min-w-[250px] py-2.5 px-3 border-1-[#cce7de] border-1 rounded-3xl shadow-[20px_20px_30px_0_rgba(0,0,0,0.2)] hover:shadow-[20px_20px_30px_0_rgba(0,0,0,0.3)] my-4 transition ease-in"
+          onclick="window.location.href='shop-product.html'"
+        >
+          <img
+            src="./image/products/n1.jpg"
+            alt=""
+            class="rounded-2xl w-full"
+          />
+          <div class="des py-2.5">
+            <span class="text-[#606063] md:text-lg">adidas</span>
+            <h5 class="pt-2 text-[#1a1a1a] md:text-[20px]">
+              Cartoon Astronaut T-Shirts
+            </h5>
+            <div class="star text-[#f3b519] text-[16px]">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="pt-2 text-[25px] font-bold text-[#088178]">$78</h4>
+          </div>
+          <div class="flex justify-center">
+            <a href="#">
+              <i
+                class="fa-solid fa-shopping-cart w-10 h-10 rounded-full bg-[#e8f6ea] font-medium text-[#088178] border border-[#cce7de]"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="pro w-[23%] min-w-[250px] py-2.5 px-3 border-1-[#cce7de] border-1 rounded-3xl shadow-[20px_20px_30px_0_rgba(0,0,0,0.2)] hover:shadow-[20px_20px_30px_0_rgba(0,0,0,0.3)] my-4 transition ease-in"
+          onclick="window.location.href='shop-product.html'"
+        >
+          <img
+            src="./image/products/n2.jpg"
+            alt=""
+            class="rounded-2xl w-full"
+          />
+          <div class="des py-2.5">
+            <span class="text-[#606063] md:text-lg">adidas</span>
+            <h5 class="pt-2 text-[#1a1a1a] md:text-[20px]">
+              Cartoon Astronaut T-Shirts
+            </h5>
+            <div class="star text-[#f3b519] text-[16px]">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="pt-2 text-[25px] font-bold text-[#088178]">$78</h4>
+          </div>
+          <div class="flex justify-center">
+            <a href="#">
+              <i
+                class="fa-solid fa-shopping-cart w-10 h-10 rounded-full bg-[#e8f6ea] font-medium text-[#088178] border border-[#cce7de]"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="pro w-[23%] min-w-[250px] py-2.5 px-3 border-1-[#cce7de] border-1 rounded-3xl shadow-[20px_20px_30px_0_rgba(0,0,0,0.2)] hover:shadow-[20px_20px_30px_0_rgba(0,0,0,0.3)] my-4 transition ease-in"
+          onclick="window.location.href='shop-product.html'"
+        >
+          <img
+            src="./image/products/n3.jpg"
+            alt=""
+            class="rounded-2xl w-full"
+          />
+          <div class="des py-2.5">
+            <span class="text-[#606063] md:text-lg">adidas</span>
+            <h5 class="pt-2 text-[#1a1a1a] md:text-[20px]">
+              Cartoon Astronaut T-Shirts
+            </h5>
+            <div class="star text-[#f3b519] text-[16px]">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="pt-2 text-[25px] font-bold text-[#088178]">$78</h4>
+          </div>
+          <div class="flex justify-center">
+            <a href="#">
+              <i
+                class="fa-solid fa-shopping-cart w-10 h-10 rounded-full bg-[#e8f6ea] font-medium text-[#088178] border border-[#cce7de]"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="pro w-[23%] min-w-[250px] py-2.5 px-3 border-1-[#cce7de] border-1 rounded-3xl shadow-[20px_20px_30px_0_rgba(0,0,0,0.2)] hover:shadow-[20px_20px_30px_0_rgba(0,0,0,0.3)] my-4 transition ease-in"
+          onclick="window.location.href='shop-product.html'"
+        >
+          <img
+            src="./image/products/n4.jpg"
+            alt=""
+            class="rounded-2xl w-full"
+          />
+          <div class="des py-2.5">
+            <span class="text-[#606063] md:text-lg">adidas</span>
+            <h5 class="pt-2 text-[#1a1a1a] md:text-[20px]">
+              Cartoon Astronaut T-Shirts
+            </h5>
+            <div class="star text-[#f3b519] text-[16px]">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="pt-2 text-[25px] font-bold text-[#088178]">$78</h4>
+          </div>
+          <div class="flex justify-center">
+            <a href="#">
+              <i
+                class="fa-solid fa-shopping-cart w-10 h-10 rounded-full bg-[#e8f6ea] font-medium text-[#088178] border border-[#cce7de]"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="pro w-[23%] min-w-[250px] py-2.5 px-3 border-1-[#cce7de] border-1 rounded-3xl shadow-[20px_20px_30px_0_rgba(0,0,0,0.2)] hover:shadow-[20px_20px_30px_0_rgba(0,0,0,0.3)] my-4 transition ease-in"
+          onclick="window.location.href='shop-product.html'"
+        >
+          <img
+            src="./image/products/n5.jpg"
+            alt=""
+            class="rounded-2xl w-full"
+          />
+          <div class="des py-2.5">
+            <span class="text-[#606063] md:text-lg">adidas</span>
+            <h5 class="pt-2 text-[#1a1a1a] md:text-[20px]">
+              Cartoon Astronaut T-Shirts
+            </h5>
+            <div class="star text-[#f3b519] text-[16px]">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="pt-2 text-[25px] font-bold text-[#088178]">$78</h4>
+          </div>
+          <div class="flex justify-center">
+            <a href="#">
+              <i
+                class="fa-solid fa-shopping-cart w-10 h-10 rounded-full bg-[#e8f6ea] font-medium text-[#088178] border border-[#cce7de]"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="pro w-[23%] min-w-[250px] py-2.5 px-3 border-1-[#cce7de] border-1 rounded-3xl shadow-[20px_20px_30px_0_rgba(0,0,0,0.2)] hover:shadow-[20px_20px_30px_0_rgba(0,0,0,0.3)] my-4 transition ease-in"
+          onclick="window.location.href='shop-product.html'"
+        >
+          <img
+            src="./image/products/n6.jpg"
+            alt=""
+            class="rounded-2xl w-full"
+          />
+          <div class="des py-2.5">
+            <span class="text-[#606063] md:text-lg">adidas</span>
+            <h5 class="pt-2 text-[#1a1a1a] md:text-[20px]">
+              Cartoon Astronaut T-Shirts
+            </h5>
+            <div class="star text-[#f3b519] text-[16px]">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="pt-2 text-[25px] font-bold text-[#088178]">$78</h4>
+          </div>
+          <div class="flex justify-center">
+            <a href="#">
+              <i
+                class="fa-solid fa-shopping-cart w-10 h-10 rounded-full bg-[#e8f6ea] font-medium text-[#088178] border border-[#cce7de]"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="pro w-[23%] min-w-[250px] py-2.5 px-3 border-1-[#cce7de] border-1 rounded-3xl shadow-[20px_20px_30px_0_rgba(0,0,0,0.2)] hover:shadow-[20px_20px_30px_0_rgba(0,0,0,0.3)] my-4 transition ease-in"
+          onclick="window.location.href='shop-product.html'"
+        >
+          <img
+            src="./image/products/n7.jpg"
+            alt=""
+            class="rounded-2xl w-full"
+          />
+          <div class="des py-2.5">
+            <span class="text-[#606063] md:text-lg">adidas</span>
+            <h5 class="pt-2 text-[#1a1a1a] md:text-[20px]">
+              Cartoon Astronaut T-Shirts
+            </h5>
+            <div class="star text-[#f3b519] text-[16px]">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="pt-2 text-[25px] font-bold text-[#088178]">$78</h4>
+          </div>
+          <div class="flex justify-center">
+            <a href="#">
+              <i
+                class="fa-solid fa-shopping-cart w-10 h-10 rounded-full bg-[#e8f6ea] font-medium text-[#088178] border border-[#cce7de]"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="pro w-[23%] min-w-[250px] py-2.5 px-3 border-1-[#cce7de] border-1 rounded-3xl shadow-[20px_20px_30px_0_rgba(0,0,0,0.2)] hover:shadow-[20px_20px_30px_0_rgba(0,0,0,0.3)] my-4 transition ease-in"
+          onclick="window.location.href='shop-product.html'"
+        >
+          <img
+            src="./image/products/n8.jpg"
+            alt=""
+            class="rounded-2xl w-full"
+          />
+          <div class="des py-2.5">
+            <span class="text-[#606063] md:text-lg">adidas</span>
+            <h5 class="pt-2 text-[#1a1a1a] md:text-[20px]">
+              Cartoon Astronaut T-Shirts
+            </h5>
+            <div class="star text-[#f3b519] text-[16px]">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="pt-2 text-[25px] font-bold text-[#088178]">$78</h4>
+          </div>
+          <div class="flex justify-center">
+            <a href="#">
+              <i
+                class="fa-solid fa-shopping-cart w-10 h-10 rounded-full bg-[#e8f6ea] font-medium text-[#088178] border border-[#cce7de]"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- grid banner -->
+    <div class="sm-banner section-p1 flex justify-evenly flex-wrap mt-15">
+      <div
+        class="banner-box flex flex-col justify-center items-start bg-[url('image/banner/b17.jpg')] bg-cover bg-center py-12 w-[580px] h-[50vh] text-white p-8"
+      >
+        <h4 class="md:text-3xl text-2xl font-light">Crazy Deals</h4>
+        <h2 class="text-3xl font-extrabold md:text-[46px]">Buy 1 Get 1 Free</h2>
+        <span class="text-[14px] md:text-lg font-medium pb-4"
+          >The best classic dress Is on sale at prerak</span
+        >
+        <button
+          class="white text-[14px] font-medium pb-4 hover:bg-[#088178] px-4.5 py-[14px] cursor-pointer border border-white outline-none transition duration-200"
+        >
+          Learn More
+        </button>
+      </div>
+      <div
+        class="banner-box flex flex-col justify-center items-start bg-[url('image/banner/b10.jpg')] bg-cover bg-center py-12 w-[580px] h-[50vh] text-white p-8"
+      >
+        <h4 class="md:text-3xl text-2xl font-light">Spring/Summer</h4>
+        <h2 class="text-3xl font-extrabold md:text-[46px]">Upcomming Season</h2>
+        <span class="text-[14px] md:text-lg font-medium pb-4"
+          >The best classic dress Is on scle at prerak</span
+        >
+        <button
+          class="white text-[14px] font-medium pb-4 hover:bg-[#088178] px-4.5 py-[14px] cursor-pointer border border-white outline-none transition duration-200"
+        >
+          Collection
+        </button>
+      </div>
+    </div>
+    <!-- grid banner 2 -->
+    <div
+      class="sm-banner flex justify-center md:justify-between flex-wrap md:px-20 px-10 md:py-10 py-15"
+    >
+      <div
+        class="banner-box flex flex-col justify-center items-start bg-[url('image/banner/b7.jpg')] bg-cover bg-center md:w-[30%] sm:w-[45%] w-full h-[30vh] text-white p-5 mb-5"
+      >
+        <h2 class="md:text-4xl text-3xl font-black">SEASONAL SALE</h2>
+        <h3 class="text-[15px] font-extrabold text-red-500">
+          Winter Collection -50% OFF
+        </h3>
+      </div>
+
+      <div
+        class="banner-box flex flex-col justify-center items-start bg-[url('image/banner/b4.jpg')] bg-cover bg-center md:w-[30%] sm:w-[45%] w-full h-[30vh] text-white p-5 mb-5"
+      >
+        <h2 class="md:text-4xl text-2xl font-black">New Footwear</h2>
+        <h3 class="text-[15px] font-bold text-red-500">
+          Winter Collection -50% OFF
+        </h3>
+      </div>
+
+      <div
+        class="banner-box flex flex-col justify-center items-start bg-[url('image/banner/b18.jpg')] bg-cover bg-center md:w-[30%] sm:w-[90%] w-full h-[30vh] text-white p-5 mb-5"
+      >
+        <h2 class="text-4xl font-black">T-Shirts</h2>
+        <h3 class="text-[15px] font-bold text-red-500">
+          Winter Collection -50% OFF
+        </h3>
+      </div>
+    </div>
+    <!-- newsletter -->
+    <div
+      class="newsletter flex justify-between items-center flex-wrap bg-[url('./image/banner/b14.png')] bg-cover bg-[20%_30%] bg-[#041e42] h-[30vh] text-white p-5 mb-5"
+    >
+      <div class="newstext">
+        <h4 class="md:text-3xl text-lg ml-7 text-center md:text-left">
+          Sign Up For Newsletters
+        </h4>
+        <p class="text-white mt-3 ml-7">
+          Get E-mail updates about our latest shop and
+          <span class="text-yellow-500">special offers.</span>
+        </p>
+      </div>
+      <div class="form flex items-center justify-center">
+        <input
+          type="text"
+          placeholder="Your email address"
+          class="border-2 p-2 rounded"
+        />
+        <button
+          class="normal text-[12px] bg-white normal text-black hover:bg-[#088178] hover:text-white text-sm font-semibold px-6 py-3 rounded cursor-pointer border-none outline-none transition duration-200 ml-7"
+        >
+          Subscribe
+        </button>
+      </div>
+    </div>
+    <!-- footer -->
+    <!-- Desktop View -->
+    <div
+      class="section-p1 hidden md:flex flex-wrap justify-between md:px-[80px]"
+    >
+      <!-- Column 1 -->
+      <div class="col w-[25%] flex justify-between flex-col items-start gap-3">
+        <img src="./logos/PRERAK-LOGO.png" alt="" class="w-[50%] mb-6" />
+        <h4>Contact</h4>
+        <p>
+          <strong>Address:</strong> 562 Wellington Road, Street 32, San
+          Francisco
+        </p>
+        <p><strong>Phone:</strong> 9971xxxx / 8851xxxx</p>
+        <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+        <div class="follow">
+          <h4 class="mb-2">Follow Us</h4>
+          <div class="icon">
+            <a href="https://facebook.com" target="_blank"
+              ><i class="fab fa-facebook-f mx-1"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="fab fa-twitter mx-1"></i
+            ></a>
+            <a href="https://pinterest.com" target="_blank"
+              ><i class="fab fa-pinterest-p mx-1"></i
+            ></a>
+            <a href="https://youtube.com" target="_blank"
+              ><i class="fab fa-youtube mx-1"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other Columns as before -->
+      <div class="col flex flex-col items-start gap-3">
+        <h4>About</h4>
+        <a href="#">About Us </a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms And Condition</a>
+        <a href="#">Contact Us</a>
+      </div>
+
+      <div class="col flex flex-col items-start gap-3">
+        <h4>My Account</h4>
+        <a href="#">Sign In </a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+
+      <div class="col install flex flex-col items-start gap-3">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row flex justify-between">
+          <img
+            src="image/pay/app.jpg"
+            alt=""
+            class="border-2-black border-2 rounded-2xl mx-2.5"
+          />
+          <img
+            src="image/pay/play.jpg"
+            alt=""
+            class="border-2-black border-2 rounded-2xl mx-2.5"
+          />
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="image/pay/pay.png" alt="" />
+      </div>
+    </div>
+
+    <!-- Mobile View (Collapsible using <details>) -->
+    <div class="md:hidden px-4">
+      <details class="mb-4">
+        <summary class="font-semibold text-lg cursor-pointer">Contact</summary>
+        <div class="mt-2 space-y-1 text-sm">
+          <p>
+            <strong>Address:</strong> 562 Wellington Road, Street 32, San
+            Francisco
+          </p>
+          <p><strong>Phone:</strong> 9971xxxx / 8851xxxx</p>
+          <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+          <div>
+            <h4 class="mb-1">Follow Us</h4>
+            <div class="flex space-x-2">
+              <a href="https://facebook.com"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+              <a href="https://pinterest.com"
+                ><i class="fab fa-pinterest-p"></i
+              ></a>
+              <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <details class="mb-4">
+        <summary class="font-semibold text-lg cursor-pointer">About</summary>
+        <div class="mt-2 flex flex-col space-y-1 text-sm">
+          <a href="#">About Us</a>
+          <a href="#">Delivery Information</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms And Condition</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </details>
+
+      <details class="mb-4">
+        <summary class="font-semibold text-lg cursor-pointer">
+          My Account
+        </summary>
+        <div class="mt-2 flex flex-col space-y-1 text-sm">
+          <a href="#">Sign In</a>
+          <a href="#">View Cart</a>
+          <a href="#">My Wishlist</a>
+          <a href="#">Track My Order</a>
+          <a href="#">Help</a>
+        </div>
+      </details>
+
+      <details class="mb-4">
+        <summary class="font-semibold text-lg cursor-pointer">
+          Install App
+        </summary>
+        <div class="mt-2 text-sm space-y-2">
+          <p>From App Store or Google Play</p>
+          <div class="flex">
+            <img
+              src="image/pay/app.jpg"
+              alt=""
+              class="w-24 border-2 rounded-xl mr-2"
+            />
+            <img
+              src="image/pay/play.jpg"
+              alt=""
+              class="w-24 border-2 rounded-xl"
+            />
+          </div>
+          <p>Secured Payment Gateways</p>
+          <img src="image/pay/pay.png" alt="" class="w-full" />
+        </div>
+      </details>
+    </div>
+
+    <!-- Bottom Note -->
+    <div>
+      <p class="text-center text-lg mt-4">Prerak.com</p>
+    </div>
+    <script src="prerak.js"></script>
+  </body>
+</html>
